@@ -37,7 +37,7 @@ namespace g2hotel_server.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<IEnumerable<RoomTypeDTO>>> AddRoomType (RoomTypeDTO roomTypeDTO)
+        public async Task<ActionResult<RoomTypeDTO>> AddRoomType (RoomTypeDTO roomTypeDTO)
         {
             var roomTypesEntity = _mapper.Map<RoomType>(roomTypeDTO);
             var result= _unitOfWork.RoomTypeRepository.AddRoomType(roomTypesEntity);

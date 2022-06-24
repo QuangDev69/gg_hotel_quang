@@ -22,9 +22,11 @@ namespace g2hotel_server.Helper
             CreateMap<AppUser, UserDTO>();
             CreateMap<AppUser, MemberDTO>();
             CreateMap<Service, ServiceDTO>();
-            CreateMap<ServiceDTO, Service>();         
+            CreateMap<ServiceDTO, Service>();
             CreateMap<RoomType, RoomTypeDTO>();
             CreateMap<RoomTypeDTO, RoomType>();
+            CreateMap<Customer, CustomerDTO>();
+            CreateMap<CustomerDTO, Customer>();
         }
     }
 }

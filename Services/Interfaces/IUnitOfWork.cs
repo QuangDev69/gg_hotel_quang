@@ -17,7 +17,7 @@ namespace g2hotel_server.Services.Interfaces
         IServiceRepository ServiceRepository { get;}
 
         IRoomTypeRepository RoomTypeRepository { get; }
-        
+        ICustomerRepository CustomerRepository { get; }        
         Task<bool> Complete();
         bool HasChanges();
     }
